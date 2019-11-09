@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:point_of_sale/widgets/gradient_back.dart';
+import 'package:point_of_sale/user/ui/screens/home_page.dart';
 
 class UserLogin extends StatefulWidget {
 UserLogin({Key key}) : super(key: key);
@@ -114,7 +116,14 @@ class _UserLoginState extends State<UserLogin> {
       children: <Widget>[
         singInText,
         FloatingActionButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => HomePage(),
+              ),
+            );
+          },
           backgroundColor: Color(0xFF4E4FE1),
           child: Icon(Icons.arrow_forward),
         ),
@@ -173,6 +182,7 @@ class _UserLoginState extends State<UserLogin> {
           children: <Widget>[
             Column(
               children: <Widget>[
+//                GradientBack('Login'),
                 background,
                 loginFormContainer
               ],

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:point_of_sale/user/ui/screens/user_login.dart';
+import 'package:point_of_sale/products/ui/screens/product_list.dart';
 
 void main() => runApp(MyApp());
 
